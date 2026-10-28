@@ -49,7 +49,8 @@ h1,h2,h3,.display{font-family:'Bricolage Grotesque',sans-serif;line-height:1.04;
 header.site{background:var(--paper);position:sticky;top:0;z-index:50;border-bottom:1px solid var(--line)}
 header.site .wrap{display:flex;align-items:center;justify-content:space-between;padding:.9rem 0;gap:1rem}
 .brand{display:flex;align-items:center;gap:.7rem}
-.brand img{height:54px;width:auto}
+.brand{flex:none}
+.brand img{height:64px;width:auto;max-width:none;flex:none}
 .brand.plate{display:inline-flex;background:#fff;padding:.8rem 1.1rem;border-radius:var(--r)}
 .brand.plate img{height:50px}
 .brand .name{font-family:'Bricolage Grotesque';font-weight:800;font-size:1.25rem;line-height:1;color:var(--navy);letter-spacing:-.02em}
@@ -129,14 +130,32 @@ nav.main a:hover::after{width:100%}
 /* method + tower */
 .method{padding:6.5rem 0;background:var(--paper)}
 .method .wrap{display:grid;grid-template-columns:.9fr 1.1fr;gap:5rem;align-items:center}
-.tower{position:relative;background:#fff;border:3px solid var(--navy);padding:1.2rem;box-shadow:12px 12px 0 var(--aqua-soft);max-width:420px}
-.tower .grid{display:grid;grid-template-columns:repeat(4,1fr);gap:8px}
-.tower .w{aspect-ratio:1/1.15;background:linear-gradient(160deg,#cdeaf8,#7ac4e6);border:2px solid var(--navy);position:relative;overflow:hidden}
-.tower .w::after{content:"";position:absolute;inset:0;background:linear-gradient(115deg,transparent 40%,rgba(255,255,255,.9) 50%,transparent 60%);transform:translateX(-120%);animation:sweep 6s infinite}
-@keyframes sweep{0%{transform:translateX(-120%)}30%,100%{transform:translateX(120%)}}
-.tower .lvl{position:absolute;left:-3px;top:0;bottom:0;width:0}
-.tower .tag{position:absolute;right:-1.1rem;top:-1.1rem;background:var(--sun);color:var(--navy);font-weight:800;font-family:'Bricolage Grotesque';padding:.5rem .9rem;border:3px solid var(--navy);transform:rotate(4deg);font-size:1.05rem}
-.tower .storeys{display:flex;justify-content:space-between;margin-top:.9rem;font-size:.72rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--muted)}
+.tower{position:relative;max-width:440px;margin-inline:auto}
+.facade{position:relative;overflow:hidden;background:#5b6b7b;border:3px solid var(--navy);padding:34px 14px 14px 46px;box-shadow:12px 12px 0 var(--aqua-soft)}
+.facade::before{content:"";position:absolute;left:-3px;right:-3px;top:-3px;height:20px;background:var(--navy)}
+.facade .grid{position:relative;display:grid;grid-template-columns:repeat(4,1fr);gap:7px}
+.facade .w{position:relative;aspect-ratio:1/1.2;border:3px solid #26323f;overflow:hidden;background:var(--bg,#7ac4e6)}
+.facade .w::before{content:"";position:absolute;inset:0;background:var(--refl,none)}
+.facade .w::after{content:"";position:absolute;left:0;right:0;top:50%;height:3px;background:#26323f}
+.facade .w i{position:absolute;inset:0;background:repeating-linear-gradient(100deg,rgba(120,100,70,.55) 0 3px,rgba(200,190,170,.5) 3px 9px);opacity:.75;transition:opacity .8s ease;z-index:2}
+.facade .w.clean i{opacity:0}
+.facade .w.clean{box-shadow:inset 0 0 0 2px rgba(255,255,255,.55)}
+.r-sky{--bg:linear-gradient(170deg,#bfe6f8,#6bb9e0);--refl:radial-gradient(ellipse 60% 22% at 30% 28%,rgba(255,255,255,.9),transparent 70%),radial-gradient(ellipse 40% 16% at 75% 62%,rgba(255,255,255,.7),transparent 70%)}
+.r-tree{--bg:linear-gradient(170deg,#9fd3ee,#4a9cc9);--refl:linear-gradient(0deg,#2f6f55 0 28%,transparent 28%),radial-gradient(ellipse 50% 20% at 35% 30%,rgba(255,255,255,.7),transparent 70%)}
+.r-sun{--bg:linear-gradient(170deg,#ffe9a8,#79c3e6 55%);--refl:radial-gradient(circle at 74% 24%,rgba(255,255,255,.95) 0 8%,rgba(255,236,160,.6) 16%,transparent 40%)}
+.r-deep{--bg:linear-gradient(170deg,#7fc1e4,#2f7fae);--refl:linear-gradient(115deg,transparent 45%,rgba(255,255,255,.5) 50%,transparent 56%)}
+.facade .rule{position:absolute;left:0;top:34px;bottom:14px;width:40px;display:flex;flex-direction:column;justify-content:space-around;align-items:center;font-family:'Bricolage Grotesque';font-weight:800;color:#dbe7f1;font-size:.95rem}
+.facade .rule span{display:block;width:100%;text-align:center;border-top:2px solid rgba(255,255,255,.35);padding-top:.25rem}
+.facade .rule span small{display:block;font-family:'DM Sans';font-weight:700;font-size:.52rem;letter-spacing:.12em;opacity:.8}
+.brush{position:absolute;left:54%;bottom:8%;width:70px;z-index:6;transition:bottom .9s ease;pointer-events:none}
+.brush .head{display:block;height:20px;background:repeating-linear-gradient(90deg,#1BA3D8 0 6px,#0e6e99 6px 8px);border:3px solid var(--navy);border-radius:4px}
+.brush .pole{position:absolute;left:50%;top:20px;width:8px;height:560px;margin-left:-4px;background:linear-gradient(90deg,#1c2733,#3b4a59,#1c2733);border-radius:4px}
+.brush .spray{position:absolute;left:-6px;right:-6px;top:-16px;height:18px;background:radial-gradient(circle,#fff 0 2px,transparent 3px) 0 0/14px 14px;opacity:.85;animation:spray .5s linear infinite}
+@keyframes spray{to{background-position:0 -14px}}
+.facade .ground{position:absolute;left:-3px;right:-3px;bottom:-3px;height:14px;background:var(--navy)}
+.facade{padding-bottom:26px}
+.tower .tag{position:absolute;right:-1rem;top:-1.3rem;z-index:7;background:var(--sun);color:var(--navy);font-weight:800;font-family:'Bricolage Grotesque';padding:.5rem .9rem;border:3px solid var(--navy);transform:rotate(4deg);font-size:1.05rem}
+.tower .note{display:flex;justify-content:space-between;margin-top:1.2rem;font-size:.72rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--muted)}
 .method h2{font-size:clamp(2.1rem,4.2vw,3.5rem);color:var(--navy);margin:1rem 0 1.2rem}
 .method p.sub{color:var(--muted);max-width:34rem}
 .steps{margin-top:2.4rem;border-top:2px solid var(--navy)}
@@ -328,8 +347,14 @@ footer .bottom a{color:#fff;font-weight:700;border-bottom:1px solid var(--sun)}
     <div class="rv">
       <div class="tower" aria-hidden="true">
         <span class="tag">Up to 6 storeys</span>
-        <div class="grid" id="towerGrid"></div>
-        <div class="storeys"><span>Ground</span><span>No ladders</span><span>6th storey</span></div>
+        <div class="facade">
+          <div class="rule"><span>6<small>STOREY</small></span><span>5</span><span>4</span><span>3</span><span>2</span><span>1</span></div>
+          <div class="grid" id="towerGrid">
+            <div class="brush" id="brush"><span class="spray"></span><span class="head"></span><span class="pole"></span></div>
+          </div>
+          <div class="ground"></div>
+        </div>
+        <div class="note"><span>Water fed pole</span><span>No ladders</span></div>
       </div>
     </div>
     <div>
@@ -454,17 +479,38 @@ footer .bottom a{color:#fff;font-weight:700;border-bottom:1px solid var(--sun)}
 </footer>
 
 <script>
-// building grid, 6 storeys x 4 windows
+// building facade: 6 storeys x 4 windows, brush climbs and windows turn clean
 (function(){
-  var g=document.getElementById('towerGrid');
-  for(var i=0;i<24;i++){
-    var d=document.createElement('div');d.className='w';
-    d.style.setProperty('--d',(i*0.15)+'s');
-    g.appendChild(d);
+  var g=document.getElementById('towerGrid'),brush=document.getElementById('brush');
+  var refl=['r-sky','r-tree','r-sun','r-deep','r-sky','r-deep','r-sun','r-tree'];
+  var rows=[];
+  for(var r=0;r<6;r++){
+    rows[r]=[];
+    for(var c=0;c<4;c++){
+      var d=document.createElement('div');
+      d.className='w '+refl[(r*3+c*5)%refl.length];
+      d.appendChild(document.createElement('i'));
+      g.insertBefore(d,brush);rows[r].push(d);
+    }
   }
-  var st=document.createElement('style');
-  st.textContent='.tower .w::after{animation-delay:var(--d)}';
-  document.head.appendChild(st);
+  var reduce=window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  function row(k){ // k=0 is ground floor
+    return rows[5-k];
+  }
+  var step=0;
+  function setBrush(k){brush.style.bottom=(k*16.66+2)+'%';}
+  function tick(){
+    if(step>6){
+      rows.forEach(function(rw){rw.forEach(function(w){w.classList.remove('clean')})});
+      step=0;setBrush(0);return;
+    }
+    if(step>0)row(step-1).forEach(function(w){w.classList.add('clean')});
+    if(step<6)setBrush(step);
+    step++;
+  }
+  if(reduce){rows.forEach(function(rw){rw.forEach(function(w){w.classList.add('clean')})});return;}
+  setBrush(0);tick();
+  setInterval(tick,1100);
 })();
 // reveal on scroll
 var io=new IntersectionObserver(function(e){e.forEach(function(x){if(x.isIntersecting){x.target.classList.add('in');io.unobserve(x.target)}})},{threshold:.15});
