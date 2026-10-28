@@ -1,0 +1,474 @@
+<!doctype html>
+<html lang="en-CA">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Airdrie Window Clean | Residential and Commercial Window Cleaning in Airdrie</title>
+<meta name="description" content="Best value residential and commercial window cleaning in Airdrie, Alberta. Pure water and water fed poles. No spots, no soaps, no ladders. Call or text 403-899-8391.">
+<link rel="icon" type="image/png" href="images/favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --navy:#0A2742;
+  --navy-2:#113A5F;
+  --aqua:#1BA3D8;
+  --aqua-soft:#DDF1FA;
+  --sun:#FFC52E;
+  --sun-deep:#F5A800;
+  --paper:#F6FAFD;
+  --ink:#0E2236;
+  --muted:#51667A;
+  --line:#D5E4EE;
+  --r:6px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:'DM Sans',system-ui,sans-serif;color:var(--ink);background:var(--paper);line-height:1.6;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+img{max-width:100%;display:block}
+a{color:inherit;text-decoration:none}
+h1,h2,h3,.display{font-family:'Bricolage Grotesque',sans-serif;line-height:1.04;letter-spacing:-.02em}
+.wrap{width:min(1180px,92%);margin-inline:auto}
+.eyebrow{font-size:.78rem;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:var(--aqua);display:inline-flex;align-items:center;gap:.7rem}
+.eyebrow::before{content:"";width:34px;height:2px;background:currentColor}
+.btn{display:inline-flex;align-items:center;gap:.6rem;font-weight:700;padding:1rem 1.6rem;border-radius:var(--r);transition:transform .2s,box-shadow .2s,background .2s;cursor:pointer;border:0;font-size:1rem}
+.btn-sun{background:var(--sun);color:var(--navy);box-shadow:0 6px 0 var(--sun-deep)}
+.btn-sun:hover{transform:translateY(3px);box-shadow:0 3px 0 var(--sun-deep)}
+.btn-line{border:2px solid rgba(255,255,255,.5);color:#fff}
+.btn-line:hover{background:#fff;color:var(--navy)}
+.btn-dark{background:var(--navy);color:#fff}
+.btn-dark:hover{background:var(--navy-2)}
+
+/* top bar */
+.topbar{background:var(--navy);color:#cfe3f1;font-size:.84rem}
+.topbar .wrap{display:flex;justify-content:space-between;gap:1rem;padding:.55rem 0;flex-wrap:wrap}
+.topbar b{color:var(--sun)}
+
+/* header */
+header.site{background:var(--paper);position:sticky;top:0;z-index:50;border-bottom:1px solid var(--line)}
+header.site .wrap{display:flex;align-items:center;justify-content:space-between;padding:.9rem 0;gap:1rem}
+.brand{display:flex;align-items:center;gap:.7rem}
+.brand img{height:54px;width:auto}
+.brand.plate{display:inline-flex;background:#fff;padding:.8rem 1.1rem;border-radius:var(--r)}
+.brand.plate img{height:50px}
+.brand .name{font-family:'Bricolage Grotesque';font-weight:800;font-size:1.25rem;line-height:1;color:var(--navy);letter-spacing:-.02em}
+.brand .name small{display:block;font-family:'DM Sans';font-weight:700;font-size:.62rem;letter-spacing:.24em;color:var(--aqua);margin-top:.3rem;text-transform:uppercase}
+nav.main{display:flex;gap:1.8rem;font-weight:500;font-size:.95rem}
+nav.main a{position:relative;padding:.3rem 0}
+nav.main a::after{content:"";position:absolute;left:0;bottom:-2px;height:2px;width:0;background:var(--sun-deep);transition:width .25s}
+nav.main a:hover::after{width:100%}
+.head-call{display:flex;align-items:center;gap:.8rem}
+.head-call .btn{padding:.75rem 1.2rem;box-shadow:0 4px 0 var(--sun-deep)}
+@media(max-width:900px){nav.main{display:none}}
+@media(max-width:520px){.brand img{height:42px}.head-call .btn span.t{display:none}}
+
+/* hero */
+.hero{position:relative;background:linear-gradient(180deg,var(--aqua-soft) 0%,var(--paper) 100%);overflow:hidden}
+.hero .wrap{display:grid;grid-template-columns:1.05fr .95fr;gap:3.5rem;align-items:center;padding:4.5rem 0 5.5rem}
+.hero h1{font-size:clamp(2.7rem,6.2vw,5.4rem);font-weight:800;color:var(--navy);margin:1.1rem 0 1.4rem}
+.hero h1 em{font-style:normal;position:relative;white-space:nowrap}
+.hero h1 em::after{content:"";position:absolute;left:-2%;right:-2%;bottom:.04em;height:.22em;background:var(--sun);z-index:-1;transform:skewX(-8deg)}
+.hero p.lead{font-size:1.15rem;color:var(--muted);max-width:34rem}
+.hero .cta{display:flex;flex-wrap:wrap;gap:1rem;margin-top:2.1rem;align-items:center}
+.hero .since{display:flex;align-items:center;gap:.7rem;font-weight:700;color:var(--navy)}
+.hero .since i{width:10px;height:10px;border-radius:50%;background:#27C26C;box-shadow:0 0 0 5px rgba(39,194,108,.2);animation:pulse 2s infinite}
+@keyframes pulse{50%{box-shadow:0 0 0 9px rgba(39,194,108,0)}}
+.tags{display:flex;gap:.6rem;flex-wrap:wrap;margin-top:2rem}
+.tags span{font-size:.82rem;font-weight:700;background:#fff;border:1px solid var(--line);padding:.4rem .85rem;border-radius:100px;color:var(--navy)}
+
+/* window frame */
+.pane{position:relative;aspect-ratio:4/5.2;border:16px solid var(--navy);background:linear-gradient(160deg,#9AD7F0,#4FB3E0 55%,#2b86b8);box-shadow:18px 18px 0 var(--sun),0 30px 60px rgba(10,39,66,.25);transform:rotate(1.2deg)}
+.pane img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.pane::before,.pane::after{content:"";position:absolute;background:var(--navy);z-index:3}
+.pane::before{left:50%;top:0;bottom:0;width:10px;transform:translateX(-50%)}
+.pane::after{top:50%;left:0;right:0;height:10px;transform:translateY(-50%)}
+.pane .glint{position:absolute;inset:0;z-index:2;background:linear-gradient(115deg,transparent 35%,rgba(255,255,255,.55) 45%,transparent 55%);background-size:250% 100%;animation:glint 5s ease-in-out infinite}
+@keyframes glint{0%{background-position:150% 0}60%,100%{background-position:-50% 0}}
+.badge{position:absolute;z-index:5;left:-34px;bottom:34px;background:#fff;border:3px solid var(--navy);padding:.9rem 1.2rem;box-shadow:8px 8px 0 var(--navy);transform:rotate(-3deg)}
+.badge b{font-family:'Bricolage Grotesque';font-size:2.2rem;line-height:1;color:var(--navy);display:block}
+.badge span{font-size:.74rem;font-weight:700;text-transform:uppercase;letter-spacing:.12em;color:var(--aqua)}
+@media(max-width:900px){.hero .wrap{grid-template-columns:1fr;padding:3rem 0 4rem}.pane{max-width:440px;margin:0 auto;transform:none}.badge{left:-10px}}
+
+/* two audiences */
+.split{display:grid;grid-template-columns:1fr 1fr}
+.split article{position:relative;min-height:460px;padding:3.5rem clamp(1.5rem,5vw,4.5rem);display:flex;flex-direction:column;justify-content:flex-end;color:#fff;overflow:hidden;isolation:isolate}
+.split article .bg{position:absolute;inset:0;z-index:-2}
+.split article .bg img{width:100%;height:100%;object-fit:cover}
+.split article::after{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(0deg,rgba(10,39,66,.92) 15%,rgba(10,39,66,.35) 100%)}
+.split .res .bg{background:linear-gradient(140deg,#1b6f9c,#0A2742)}
+.split .com .bg{background:linear-gradient(140deg,#0e4a73,#05182b)}
+.split .num{position:absolute;top:1.2rem;right:1.6rem;font-family:'Bricolage Grotesque';font-size:9rem;font-weight:800;color:rgba(255,255,255,.1);line-height:1}
+.split h2{font-size:clamp(2rem,4vw,3.2rem);margin-bottom:.8rem}
+.split p{max-width:30rem;color:#d6e7f3}
+.split .more{margin-top:1.4rem;font-weight:700;color:var(--sun);display:inline-flex;gap:.5rem;align-items:center}
+.split .more:hover{gap:.9rem}
+@media(max-width:800px){.split{grid-template-columns:1fr}.split article{min-height:380px}}
+
+/* pure water */
+.pure{background:var(--navy);color:#fff;position:relative;overflow:hidden}
+.pure .wrap{padding:6rem 0}
+.pure h2{font-size:clamp(2.2rem,4.6vw,3.9rem);max-width:15ch;margin:1rem 0 1.2rem}
+.pure .intro{display:grid;grid-template-columns:1fr 1fr;gap:3rem;align-items:end}
+.pure .intro p{color:#bcd3e4;max-width:36rem}
+.meter{margin-top:3.5rem;display:grid;grid-template-columns:1fr auto 1fr;gap:1.5rem;align-items:center}
+.reading{border:2px solid rgba(255,255,255,.18);padding:2rem 2.2rem;border-radius:var(--r);background:rgba(255,255,255,.03)}
+.reading small{font-weight:700;letter-spacing:.16em;text-transform:uppercase;font-size:.72rem;color:#8fb3cc}
+.reading .big{font-family:'Bricolage Grotesque';font-weight:800;font-size:clamp(3.4rem,8vw,6.4rem);line-height:1;margin:.3rem 0}
+.reading .big sub{font-size:.28em;font-weight:700;letter-spacing:.04em;margin-left:.3rem;color:#8fb3cc}
+.reading.after{background:var(--sun);color:var(--navy);border-color:var(--sun)}
+.reading.after small,.reading.after .big sub{color:var(--navy-2)}
+.reading p{font-size:.95rem;opacity:.85}
+.flow{display:flex;flex-direction:column;gap:.6rem;align-items:center}
+.flow .stage{background:var(--aqua);color:var(--navy);font-weight:700;padding:.6rem 1rem;border-radius:100px;font-size:.88rem;white-space:nowrap;min-width:170px;text-align:center}
+.flow .stage:nth-child(2){background:#5CC2E8}.flow .stage:nth-child(3){background:#9AD7F0}
+.flow .arrow{color:var(--sun);font-size:1.3rem;line-height:1}
+.pure .foot{margin-top:2.5rem;color:#8fb3cc;font-size:.95rem;max-width:44rem}
+@media(max-width:900px){.pure .intro,.meter{grid-template-columns:1fr}.flow{flex-direction:row;flex-wrap:wrap;justify-content:center}.flow .arrow{transform:rotate(90deg)}}
+
+/* method + tower */
+.method{padding:6.5rem 0;background:var(--paper)}
+.method .wrap{display:grid;grid-template-columns:.9fr 1.1fr;gap:5rem;align-items:center}
+.tower{position:relative;background:#fff;border:3px solid var(--navy);padding:1.2rem;box-shadow:12px 12px 0 var(--aqua-soft);max-width:420px}
+.tower .grid{display:grid;grid-template-columns:repeat(4,1fr);gap:8px}
+.tower .w{aspect-ratio:1/1.15;background:linear-gradient(160deg,#cdeaf8,#7ac4e6);border:2px solid var(--navy);position:relative;overflow:hidden}
+.tower .w::after{content:"";position:absolute;inset:0;background:linear-gradient(115deg,transparent 40%,rgba(255,255,255,.9) 50%,transparent 60%);transform:translateX(-120%);animation:sweep 6s infinite}
+@keyframes sweep{0%{transform:translateX(-120%)}30%,100%{transform:translateX(120%)}}
+.tower .lvl{position:absolute;left:-3px;top:0;bottom:0;width:0}
+.tower .tag{position:absolute;right:-1.1rem;top:-1.1rem;background:var(--sun);color:var(--navy);font-weight:800;font-family:'Bricolage Grotesque';padding:.5rem .9rem;border:3px solid var(--navy);transform:rotate(4deg);font-size:1.05rem}
+.tower .storeys{display:flex;justify-content:space-between;margin-top:.9rem;font-size:.72rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--muted)}
+.method h2{font-size:clamp(2.1rem,4.2vw,3.5rem);color:var(--navy);margin:1rem 0 1.2rem}
+.method p.sub{color:var(--muted);max-width:34rem}
+.steps{margin-top:2.4rem;border-top:2px solid var(--navy)}
+.steps li{list-style:none;display:grid;grid-template-columns:3.4rem 1fr;gap:1rem;padding:1.3rem 0;border-bottom:1px solid var(--line)}
+.steps li b.n{font-family:'Bricolage Grotesque';font-size:2.3rem;color:var(--aqua);line-height:1}
+.steps li h3{font-size:1.25rem;color:var(--navy);margin-bottom:.25rem;letter-spacing:-.01em}
+.steps li p{color:var(--muted);font-size:.98rem}
+@media(max-width:900px){.method .wrap{grid-template-columns:1fr;gap:3.5rem}.tower{margin-inline:auto}}
+
+/* compare */
+.compare{background:var(--aqua-soft);padding:6rem 0}
+.compare h2{font-size:clamp(2rem,4vw,3.3rem);color:var(--navy);margin:1rem 0 2.5rem;max-width:20ch}
+.vs{display:grid;grid-template-columns:1fr 1fr;border:3px solid var(--navy);background:#fff;box-shadow:12px 12px 0 var(--navy)}
+.vs>div{padding:2.2rem 2.4rem}
+.vs .old{background:#EEF2F5;border-right:3px solid var(--navy)}
+.vs h3{font-size:1.5rem;margin-bottom:1.2rem;color:var(--navy);display:flex;justify-content:space-between;align-items:center}
+.vs h3 span{font-family:'DM Sans';font-size:.7rem;letter-spacing:.14em;text-transform:uppercase;padding:.3rem .7rem;border-radius:100px;background:#cfd8df;color:#4a5b6a}
+.vs .new h3 span{background:var(--sun);color:var(--navy)}
+.vs ul{list-style:none;display:grid;gap:.9rem}
+.vs li{display:grid;grid-template-columns:1.6rem 1fr;gap:.6rem;font-size:1rem}
+.vs .old li::before{content:"\2715";color:#B0463A;font-weight:700}
+.vs .new li::before{content:"\2713";color:#1c9a58;font-weight:700}
+@media(max-width:800px){.vs{grid-template-columns:1fr}.vs .old{border-right:0;border-bottom:3px solid var(--navy)}}
+
+/* ledger */
+.ledger{padding:6rem 0;background:var(--paper)}
+.ledger .head{display:grid;grid-template-columns:1fr 1fr;gap:3rem;align-items:end;margin-bottom:3rem}
+.ledger h2{font-size:clamp(2rem,4vw,3.3rem);color:var(--navy);margin-top:1rem}
+.ledger .head p{color:var(--muted)}
+.rows{border-top:3px solid var(--navy)}
+.rows div{display:grid;grid-template-columns:200px 1fr 110px;gap:1.5rem;padding:1.4rem 0;border-bottom:1px solid var(--line);align-items:baseline;transition:background .2s,padding .2s}
+.rows div:hover{background:#fff;padding-inline:1rem}
+.rows .k{font-family:'Bricolage Grotesque';font-weight:800;font-size:1.5rem;color:var(--navy);letter-spacing:-.01em}
+.rows .v{color:var(--muted)}
+.rows .s{font-size:.72rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:#1c9a58;text-align:right}
+@media(max-width:800px){.ledger .head{grid-template-columns:1fr}.rows div{grid-template-columns:1fr;gap:.3rem}.rows .s{text-align:left}}
+
+/* bonus */
+.bonus{background:var(--sun);color:var(--navy);position:relative;overflow:hidden}
+.bonus .wrap{padding:5.5rem 0;display:grid;grid-template-columns:.8fr 1.2fr;gap:4rem;align-items:center}
+.bonus .sunmark{position:absolute;right:-120px;top:-120px;width:420px;height:420px;border-radius:50%;border:2px dashed rgba(10,39,66,.25);animation:spin 60s linear infinite}
+.bonus .sunmark::after{content:"";position:absolute;inset:60px;border-radius:50%;border:2px dashed rgba(10,39,66,.2)}
+@keyframes spin{to{transform:rotate(360deg)}}
+.bonus h2{font-size:clamp(2.2rem,5vw,4.2rem);margin:1rem 0 1rem}
+.bonus .eyebrow{color:var(--navy)}
+.bonus p.free{font-weight:700;font-size:1.1rem}
+.tickets{display:grid;grid-template-columns:1fr 1fr;gap:1rem}
+.ticket{background:#fff;border:3px solid var(--navy);padding:1.3rem 1.4rem 1.4rem;position:relative}
+.ticket::before,.ticket::after{content:"";position:absolute;top:50%;width:16px;height:16px;border-radius:50%;background:var(--sun);border:3px solid var(--navy);transform:translateY(-50%)}
+.ticket::before{left:-10px;clip-path:inset(0 0 0 50%)}
+.ticket::after{right:-10px;clip-path:inset(0 50% 0 0)}
+.ticket b{display:block;font-family:'Bricolage Grotesque';font-size:.8rem;letter-spacing:.16em;text-transform:uppercase;color:var(--aqua);margin-bottom:.4rem}
+.ticket p{font-size:.97rem;line-height:1.5}
+@media(max-width:900px){.bonus .wrap{grid-template-columns:1fr;gap:2.5rem}.tickets{grid-template-columns:1fr}}
+
+/* cta */
+.cta-band{background:var(--navy);color:#fff;text-align:center;position:relative;overflow:hidden}
+.cta-band .wrap{padding:6rem 0}
+.cta-band h2{font-size:clamp(2.2rem,5vw,4.2rem);max-width:16ch;margin:1rem auto 1.2rem}
+.cta-band p{color:#bcd3e4}
+.cta-band .phone{display:inline-block;font-family:'Bricolage Grotesque';font-weight:800;font-size:clamp(2.6rem,8vw,6rem);color:var(--sun);margin:1.5rem 0 2rem;letter-spacing:-.03em;line-height:1;border-bottom:4px solid var(--sun);padding-bottom:.2rem}
+.cta-band .phone:hover{color:#fff;border-color:#fff}
+.cta-band .eyebrow{color:var(--aqua)}
+.cta-band .eyebrow::before{display:none}
+
+/* footer */
+footer{background:#06192c;color:#a9c2d6;font-size:.95rem}
+footer .top{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:3rem;padding:4rem 0 3rem}
+footer .brand .name{color:#fff}
+footer p.about{margin-top:1.2rem;max-width:26rem}
+footer h4{font-family:'Bricolage Grotesque';color:#fff;font-size:1.05rem;margin-bottom:1rem}
+footer ul{list-style:none;display:grid;gap:.55rem}
+footer a:hover{color:var(--sun)}
+footer .bottom{border-top:1px solid rgba(255,255,255,.1);padding:1.4rem 0;display:flex;justify-content:space-between;flex-wrap:wrap;gap:.8rem;font-size:.86rem}
+footer .bottom a{color:#fff;font-weight:700;border-bottom:1px solid var(--sun)}
+@media(max-width:800px){footer .top{grid-template-columns:1fr;gap:2rem}}
+
+/* reveal */
+.rv{opacity:0;transform:translateY(26px);transition:opacity .7s,transform .7s}
+.rv.in{opacity:1;transform:none}
+@media(prefers-reduced-motion:reduce){*{animation:none!important}.rv{opacity:1;transform:none}}
+</style>
+</head>
+<body>
+
+<div class="topbar">
+  <div class="wrap">
+    <span>Airdrie Window Clean is operated by R and R Maintenance</span>
+    <span>Call or text <b>403-899-8391</b></span>
+  </div>
+</div>
+
+<header class="site">
+  <div class="wrap">
+    <a class="brand" href="#top" aria-label="Airdrie Window Clean"><img src="images/logo-horizontal.png" alt="Airdrie Window Clean, residential and commercial"></a>
+    <nav class="main">
+      <a href="#who">Who we clean for</a>
+      <a href="#pure-water">Pure water</a>
+      <a href="#method">How it works</a>
+      <a href="#accountable">Why us</a>
+      <a href="#screens">Free screen wash</a>
+    </nav>
+    <div class="head-call">
+      <a class="btn btn-sun" href="tel:4038998391"><span class="t">Free Quote</span> 403-899-8391</a>
+    </div>
+  </div>
+</header>
+
+<main id="top">
+
+<!-- HERO -->
+<section class="hero">
+  <div class="wrap">
+    <div>
+      <span class="eyebrow">Window cleaning in Airdrie, Alberta</span>
+      <h1>Best value window cleaning. <em>Spot free.</em></h1>
+      <p class="lead">We will make your exterior windows sparkle using the latest technology. No spots, soaps, or ladders. Pure Water and the Water Fed Pole System is a decades old proven technology that is safer for the business or home owner and the window washer.</p>
+      <div class="cta">
+        <a class="btn btn-sun" href="tel:4038998391">Call for a Free Quote Now</a>
+        <span class="since"><i></i>We're open! Making happy clean windows in Airdrie since 2018</span>
+      </div>
+      <div class="tags">
+        <span>Residential</span><span>Commercial</span><span>No chemicals</span><span>Water fed poles</span>
+      </div>
+    </div>
+    <div class="pane rv">
+      <img src="images/pole.jpg" alt="Water fed pole brush cleaning a window" onerror="this.remove()">
+      <div class="glint"></div>
+      <div class="badge"><b>0 ppm</b><span>Pure water rinse</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- RESIDENTIAL / COMMERCIAL -->
+<section class="split" id="who">
+  <article class="res">
+    <div class="bg"><img src="images/residential.jpg" alt="" onerror="this.remove()"></div>
+    <span class="num">01</span>
+    <h2>Residential windows</h2>
+    <p>The best value choice for getting your residential windows cleaned in Airdrie. Your windows stay cleaner longer because no soap is used.</p>
+    <a class="more" href="tel:4038998391">Get a free quote <span>&rarr;</span></a>
+  </article>
+  <article class="com">
+    <div class="bg"><img src="images/commercial.jpg" alt="" onerror="this.remove()"></div>
+    <span class="num">02</span>
+    <h2>Commercial windows</h2>
+    <p>Our poles can go as high as 6 storeys, so there is no up and down on ladders for your business. Safer for the business owner and faster than traditional methods.</p>
+    <a class="more" href="tel:4038998391">Get a free quote <span>&rarr;</span></a>
+  </article>
+</section>
+
+<!-- PURE WATER -->
+<section class="pure" id="pure-water">
+  <div class="wrap">
+    <div class="intro">
+      <div>
+        <span class="eyebrow">The science</span>
+        <h2>Ordinary tap water in. Pure water out.</h2>
+      </div>
+      <p>The system uses a series of filters to turn your ordinary tap water into pure water. Dissolved solids include iron, calcium, chlorine, other minerals and chemicals. When they dry on glass, they leave spots and streaks.</p>
+    </div>
+
+    <div class="meter">
+      <div class="reading">
+        <small>Airdrie tap water</small>
+        <div class="big" data-count="300">300<sub>ppm TDS</sub></div>
+        <p>Upwards of 300 parts per million of total dissolved solids.</p>
+      </div>
+      <div class="flow" aria-label="Filter stages">
+        <div class="stage">Carbon</div>
+        <div class="arrow">&darr;</div>
+        <div class="stage">Reverse Osmosis</div>
+        <div class="arrow">&darr;</div>
+        <div class="stage">De-Ionizing</div>
+      </div>
+      <div class="reading after">
+        <small>Our pure water</small>
+        <div class="big" data-count="0">0<sub>ppm TDS</sub></div>
+        <p>Our filtration system takes all of these solids out of the water.</p>
+      </div>
+    </div>
+    <p class="foot">Because we are not using chemicals, it is easier on the environment too. And when it rains, your windows get another rinse from Mother Nature.</p>
+  </div>
+</section>
+
+<!-- METHOD -->
+<section class="method" id="method">
+  <div class="wrap">
+    <div class="rv">
+      <div class="tower" aria-hidden="true">
+        <span class="tag">Up to 6 storeys</span>
+        <div class="grid" id="towerGrid"></div>
+        <div class="storeys"><span>Ground</span><span>No ladders</span><span>6th storey</span></div>
+      </div>
+    </div>
+    <div>
+      <span class="eyebrow">How it works</span>
+      <h2>Scrub, rinse, and let it dry clean.</h2>
+      <p class="sub">The process is a bit unique but makes total sense when you do the science.</p>
+      <ol class="steps">
+        <li class="rv"><b class="n">1</b><div><h3>Scrub with pure water</h3><p>We scrub the window trims and glass with a stiff nylon brush, wet with the pure water, to agitate the dirt off the windows through gravity.</p></div></li>
+        <li class="rv"><b class="n">2</b><div><h3>Rinse with only pure water</h3><p>Then we thoroughly rinse with only pure water.</p></div></li>
+        <li class="rv"><b class="n">3</b><div><h3>It dries completely clean</h3><p>This dries completely clean, because the water is pure.</p></div></li>
+      </ol>
+    </div>
+  </div>
+</section>
+
+<!-- COMPARE -->
+<section class="compare">
+  <div class="wrap">
+    <span class="eyebrow">Why pure water</span>
+    <h2>Soap leaves a sticky residue. Pure water does not.</h2>
+    <div class="vs rv">
+      <div class="old">
+        <h3>Soap and squeegees <span>Still have a place</span></h3>
+        <ul>
+          <li>Leave a residue that dust will later build on</li>
+          <li>Soaps leave a sticky residue that attracts dirt</li>
+          <li>Ladders mean a chance of falling off, or a ladder falling onto your car</li>
+          <li>Slower than the water fed pole method</li>
+        </ul>
+      </div>
+      <div class="new">
+        <h3>Pure water and poles <span>What we use</span></h3>
+        <ul>
+          <li>A cleaner window for longer, with no soap used</li>
+          <li>No chemicals, with a rinse from Mother Nature when it rains</li>
+          <li>Safer and faster than going up a ladder</li>
+          <li>Poles reach as high as 6 storeys</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- LEDGER -->
+<section class="ledger" id="accountable">
+  <div class="wrap">
+    <div class="head">
+      <div>
+        <span class="eyebrow">Experience</span>
+        <h2>Local, insured and accountable.</h2>
+      </div>
+      <p>Serving Airdrie and area since 2018. Our family has lived in the Airdrie community for more than 20 years, and when we saw the benefits of the Pure Water window cleaning system, we immediately recognized the value it would bring to both residential and commercial clients.</p>
+    </div>
+    <div class="rows">
+      <div class="rv"><span class="k">Local economy</span><span class="v">We support our local economy and community, and pay Airdrie taxes and licences.</span><span class="s">Paid</span></div>
+      <div class="rv"><span class="k">$5 million liability</span><span class="v">We carry 5 million dollars of liability insurance to protect you, our client.</span><span class="s">Covered</span></div>
+      <div class="rv"><span class="k">Workers comp</span><span class="v">We pay workers compensation and any required employee deductions.</span><span class="s">Paid</span></div>
+      <div class="rv"><span class="k">Satisfaction guaranteed</span><span class="v">We take our business seriously, are accountable, and guarantee our service.</span><span class="s">Guaranteed</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- BONUS -->
+<section class="bonus" id="screens">
+  <div class="sunmark"></div>
+  <div class="wrap">
+    <div>
+      <span class="eyebrow">Satisfaction guaranteed</span>
+      <h2>Let the sun shine in bonus!</h2>
+      <p class="free">We will wash your window screens for free.</p>
+    </div>
+    <div class="tickets">
+      <div class="ticket rv"><b>Step 1</b><p>Remove, label, and bring your window screens to us during our window cleaning visit. This allows us access to properly clean all of your windows, not just the ones without a screen.</p></div>
+      <div class="ticket rv"><b>Step 2</b><p>Leave those large patio door screens in place. They can be a pain to remove so why risk damaging something. We have ways to clean them where they stand.</p></div>
+      <div class="ticket rv"><b>Step 3</b><p>For maximum sunshine, airflow, and our way of saying thank you, we will wash your window screens for free that you have brought to us from your home or business.</p></div>
+      <div class="ticket rv"><b>Step 4</b><p>Once the screens are dry just re-install them and enjoy the view.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="cta-band">
+  <div class="wrap">
+    <span class="eyebrow">Free quote</span>
+    <h2>Ready for happy clean windows?</h2>
+    <p>Call or text us today.</p>
+    <a class="phone" href="tel:4038998391">403-899-8391</a><br>
+    <a class="btn btn-sun" href="tel:4038998391">Call for a Free Quote Now</a>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="wrap top">
+    <div>
+      <a class="brand plate" href="#top"><img src="images/logo-horizontal.png" alt="Airdrie Window Clean, residential and commercial"></a>
+      <p class="about">Best value window cleaning services in Airdrie, Alberta. Making happy clean windows since 2018.</p>
+    </div>
+    <div>
+      <h4>Explore</h4>
+      <ul>
+        <li><a href="#who">Residential and commercial</a></li>
+        <li><a href="#pure-water">Pure water</a></li>
+        <li><a href="#method">How it works</a></li>
+        <li><a href="#accountable">Why us</a></li>
+        <li><a href="#screens">Free screen wash</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>Get in touch</h4>
+      <ul>
+        <li><a href="tel:4038998391">Call/Text: 403-899-8391</a></li>
+        <li>Airdrie Window Clean is operated by R and R Maintenance</li>
+      </ul>
+    </div>
+  </div>
+  <div class="wrap bottom">
+    <span>&copy; Airdrie Window Clean. All rights reserved.</span>
+    <span>Design by <a href="https://cleanningdigital.com/" target="_blank" rel="noopener">Cleaning Digital</a></span>
+  </div>
+</footer>
+
+<script>
+// building grid, 6 storeys x 4 windows
+(function(){
+  var g=document.getElementById('towerGrid');
+  for(var i=0;i<24;i++){
+    var d=document.createElement('div');d.className='w';
+    d.style.setProperty('--d',(i*0.15)+'s');
+    g.appendChild(d);
+  }
+  var st=document.createElement('style');
+  st.textContent='.tower .w::after{animation-delay:var(--d)}';
+  document.head.appendChild(st);
+})();
+// reveal on scroll
+var io=new IntersectionObserver(function(e){e.forEach(function(x){if(x.isIntersecting){x.target.classList.add('in');io.unobserve(x.target)}})},{threshold:.15});
+document.querySelectorAll('.rv').forEach(function(el){io.observe(el)});
+</script>
+</body>
+</html>
